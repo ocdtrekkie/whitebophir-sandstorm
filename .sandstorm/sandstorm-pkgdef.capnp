@@ -19,9 +19,9 @@ const pkgdef :Spk.PackageDefinition = (
 
     appTitle = (defaultText = "WBO"),
 
-    appVersion = 0,  # Increment this for every release.
+    appVersion = 1,  # Increment this for every release.
 
-    appMarketingVersion = (defaultText = "1.19.2"),
+    appMarketingVersion = (defaultText = "1.20"),
     # Human-readable representation of appVersion. Should match the way you
     # identify versions of your app in documentation and marketing.
 
@@ -55,20 +55,13 @@ const pkgdef :Spk.PackageDefinition = (
       ),
       pgpKeyring = embed "pgp-keyring",
 
-      #description = (defaultText = embed "path/to/description.md"),
-      # The app's description in Github-flavored Markdown format, to be displayed e.g.
-      # in an app store. Note that the Markdown is not permitted to contain HTML nor image tags (but
-      # you can include a list of screenshots separately).
+      description = (defaultText = embed "../README.md"),
 
       shortDescription = (defaultText = "whiteboard"),
 
       screenshots = [
-        # Screenshots to use for marketing purposes.  Examples below.
-        # Sizes are given in device-independent pixels, so if you took these
-        # screenshots on a Retina-style high DPI screen, divide each dimension by two.
-
-        #(width = 746, height = 795, jpeg = embed "path/to/screenshot-1.jpeg"),
-        #(width = 640, height = 480, png = embed "path/to/screenshot-2.png"),
+        (width = 1817, height = 958, png = embed "screenshot1.png"),
+        (width = 1920, height = 1514, png = embed "screenshot2.png"),
       ],
       #changeLog = (defaultText = embed "path/to/sandstorm-specific/changelog.md"),
       # Documents the history of changes in Github-flavored markdown format (with the same restrictions
